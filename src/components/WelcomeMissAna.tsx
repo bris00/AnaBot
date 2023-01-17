@@ -26,6 +26,14 @@ export default function Banner() {
           author: "Bris",
           message: "I love being under your control Miss Ana!",
         },
+        {
+          author: "Nici",
+          message: "Keep your head up, we don't want that crown slipping, Miss Ana!",
+        },
+        {
+          author: "Nici",
+          message: "Your truly dumb slut would love to make you smile and get humiliated!",
+        }
       ];
       
       const message = messages[Math.floor(Math.random() * messages.length)];
