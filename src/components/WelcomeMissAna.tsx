@@ -33,6 +33,10 @@ export default function Banner() {
         {
           author: "Nici",
           message: "Your truly dumb slut would love to make you smile and get humiliated!",
+        },
+        {
+          author: "Nici",
+          message: "멋진 하루 되세요 미스 아나",
         }
       ];
       

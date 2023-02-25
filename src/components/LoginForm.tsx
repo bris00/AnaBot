@@ -40,7 +40,8 @@ export default function LoginForm() {
     const onSubmit = async (e: SubmitEvent) => {
         e.preventDefault();
 
-        const token = await window.api.invoke.login({ username, password });
+        // const token = await window.api.invoke.login({ username, password });
+        const token = { access_token: "helloj", id_token: "hello", refresh_token: "mine" };
         
         console.log(token);
 
@@ -68,7 +69,7 @@ export default function LoginForm() {
                 <br />
                 <label htmlFor="username">Username:</label>
                 <input onChange={e => setUsername(e.target.value)} id="username" type="text" />
-                <label htmlFor="password">Password:</label>
+                {/* <label htmlFor="password">Password:</label> */}
                 <input onChange={e => setPassword(e.target.value)} id="password" type="password" />
                 <input type="submit" value="Login" />
             </StyledForm>

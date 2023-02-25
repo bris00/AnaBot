@@ -1,5 +1,5 @@
-/.direnv
-/node_modules
+.direnv
+
 # Logs
 logs
 *.log
@@ -9,14 +9,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+node_modules
 dist
 dist-ssr
-dist-electron
-release
 *.local
 
 # Editor directories and files
-.vscode/.debug.env
+.vscode/*
+!.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
