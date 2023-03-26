@@ -30,6 +30,12 @@ export default function Banner() {
             <Nav.Link href="#/automation/share-link">Automation - Share Link</Nav.Link>
           </Nav>
           <Nav className="mr-auto">
+            <Nav.Link href="#/keyholding">Keyholding</Nav.Link>
+          </Nav>
+          <Nav className="mr-auto">
+            <Nav.Link href="#/vizl">Vizualize Locks</Nav.Link>
+          </Nav>
+          <Nav className="mr-auto">
             <Nav.Link onClick={logout}>Logout</Nav.Link>
           </Nav>
         </Navbar.Collapse>

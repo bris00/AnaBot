@@ -23,8 +23,10 @@ const GlobalStyle = styled.div`
   }
 `;
 
-const LoginForm = lazy(() => import('./components/LoginForm'))
-const ShareLink = lazy(() => import('./components/automation/ShareLink'))
+const LoginForm = lazy(() => import('./components/LoginForm'));
+const ShareLink = lazy(() => import('./components/automation/ShareLink'));
+const VizualizeLocks = lazy(() => import('./components/VizualizeLocks'));
+const Keyholder = lazy(() => import('./components/Keyholder'));
 
 function App() {
   // TODO: NoMatch, Random welcome message
@@ -53,6 +55,16 @@ function App() {
                 </Suspense>
               } />
             </Route>
+            <Route path="/vizl" element={
+              <Suspense fallback={<>...</>}>
+                <VizualizeLocks />
+              </Suspense>
+            } />
+            <Route path="/keyholding" element={
+              <Suspense fallback={<>...</>}>
+                <Keyholder />
+              </Suspense>
+            } />
           </Routes> 
         </GlobalStyle>
       </UserContext.Provider>
